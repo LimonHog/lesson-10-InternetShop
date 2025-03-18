@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <div class="products">
+      <div class="products__add products__card">
+          <img src="pictures/add.svg" class="add_picture">
+          <div class="form__fields">
+            <form class="add__form">
+              <label for="image-path">Путь до изображения:</label>
+              <input type="text" class="form__image-path text-field" id="image-path" required>
+
+              <label for="rating">Оценка товара</label>
+              <input type="text" class="form__rating text-field" id="rating" required>
+
+              <label for="value">Калорийность товара</label>
+              <input type="text" class="form__value text-field" id="value" required>
+
+              <label for="name">Название товара</label>
+              <input type="text" class="form__name text-field" id="name" required>
+
+              <label for="cost">Цена товара</label>
+              <input type="text" class="form__cost text-field" id="cost" required>
+
+              
+              <div class="button-block">
+                <button class="form__button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+      </div>
+      <div class="modal">
+        <div class="modal__title">Вы уверенны в удалении этого товара?</div>
+        <div class="modal__buttons">
+          <button id="yes" class="modal__button">Да</button>
+          <button id="no" class="modal__button">Нет</button>
+        </div>
+      </div>
+        
+     </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
